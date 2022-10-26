@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="icon" type="imagem/png" href="porticon.png" />
+  <meta charset="utf-8">
+
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsivo*/
+@media screen and (max-width: 400px) {
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+}
+
+    img{
+		display:block;
+		margin:auto;
+		justify-content:center;
+		width:350px;
+		height:250px;
+    }
+
+body{
+    background-image:url(tech.png);
+	background-attachment:fixed;
+    background-repeat:no-repeat;
+	background-size:1880px 900px;
+    min-height: 300px;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    color: white;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 70px auto 70px;
+    grid-template-areas: "cabecalho cabecalho" "aside main" "rodape rodape";
+}
+
+header {
+    grid-area: cabecalho;
+    float: right;
+}
+
+aside {
+    grid-area: auto;
+}
+
+main {
+    grid-area: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+      
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(221, 221, 221, 0.007);
+}
+
+li {float: right; 
+}
+
+li a {
+    display:block; 
+    padding:12px;
+	text-decoration: none;
+
+}
+
+a:link {
+    color: blue;
+	
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+a:active {
+    color: steelblue;
+}
+footer {
+   position:fixed;
+   left:0;
+   bottom:0;
+   width:100%;
+   background-color:black;
+   color:white;
+   text-align: center;
+}
+
+.fuut {
+   position:fixed;
+   left:0;
+   bottom: 10px;
+   width:100%;
+   background-color: transparent;
+   color:white;
+   text-align: center;
+}
+
+.atv1{
+    background-image:url(netflix.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 28%;
+    left: 23.5%;
+    object-fit: contain;
+    
+}
+
+.atv2{
+    background-image:url(cadinfo.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 28%;
+    left: 59%;
+    object-fit: contain;
+    
+}
+
+.atv3{
+    background-image:url(fluxorender.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 58%;
+    left: 28.5%;
+    object-fit: contain;
+    
+}
+
+.atv4{
+    background-image:url(flol.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 58%;
+    left: 57.5%;
+    object-fit: contain;
+    
+}
+
+.atv5{
+    background-image:url(superanimes.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 89%;
+    left: 28.5%;
+    object-fit: contain;
+    
+}
+
+.atv6{
+    background-image:url(acasem.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 87%;
+    left: 57.5%;
+    object-fit: contain;
+    
+}
+
+.ftmenu1{
+    background-image:url(menunetflix.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 22%;
+    left: 0%;
+    object-fit: contain;
+    
+}
+
+.ftmenu2{
+    background-image:url(routeparameters.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 27%;
+    left: 0%;
+    object-fit: contain;
+    
+}
+
+.ftmenu3{
+    background-image:url(fluxrender.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 32%;
+    left: 0%;
+    object-fit: contain;
+    
+}
+
+.ftmenu4{
+    background-image:url(flatlist.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 37%;
+    left: 0%;
+    object-fit: contain;
+    
+}
+
+.ftmenu5{
+    background-image:url(drawer\ menu.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 42%;
+    left: 0%;
+    object-fit: contain;
+    
+}
+
+.ftmenu6{
+    background-image:url(planningtcc.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 47%;
+    left: 0%;
+    object-fit: contain;
+    
+}
+
+.ftlink{
+    background-image:url(link.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 17%;
+    left: 0%;
+    object-fit: contain;
+    
+}
+
+div {
+    margin: 0 auto;
+   /* border: 1px solid white; */
+align-items: center;
+width: 500px;
+justify-content: center;
+align-self: center;
+align-content: center;}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+
+.lateral {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+.card2 {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+
+.card3 {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+
+.card4 {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+
+.card5 {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 80%;
+    left: 19%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+
+.card6 {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: nowrap;
+    
+}
+p{font-size: 50; color: white; font-family: Special Elite; text-align: center;}
+
+.p4 {font-size: 30px; color: red; font-family: Special Elite; text-align: center;}
+h1 {font-size: 20; color: white; font-family: Special Elite; text-align: center; margin-top: 900px;}
+
+.p2 {font-size: 30px; color: rgb(30, 189, 9); font-family: Special Elite; text-align: center;}
+
+.p3 {font-size: 30px; color: white; font-family: Special Elite; text-align: center;}
+
+.quebrabottom{
+		margin: -33px 1px 100px 1px;
+	}
+
+    .quebrabottom3{
+		margin-top: 1400px;
+	}
+    .phrase{ margin: 1300 0 0 0;}
+
+</style>
+</head>
+<body>
+    <title> Portfólio </title> 
+
+    <div class="container" >
+        <header>  <ul>
+            <li><a href="https://github.com/Felg4t">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/luiz-felipe-nogueira-da-silva-9376a2144/">Linkedin</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="index.html">Inicio</a></li>
+          </ul></header>
+        <aside>
+
+            <a href= "https://snack.expo.dev/@felg4t/5-telas-da-netflix"> <div class="ftlink" style="height:1px; width:150px;"></div></a> 
+            <a href= "https://snack.expo.dev/@felg4t/5-telas-da-netflix"> <div class="ftmenu1" style="height:1px; width:150px;"></div></a> 
+            <a href= "https://snack.expo.dev/@felg4t/5-telas-da-netflix"> <div class="ftmenu2" style="height:1px; width:150px;"></div></a> 
+            <a href= "https://snack.expo.dev/@felg4t/5-telas-da-netflix"> <div class="ftmenu3" style="height:1px; width:150px;"></div></a> 
+            <a href= "https://snack.expo.dev/@felg4t/5-telas-da-netflix"> <div class="ftmenu4" style="height:1px; width:150px;"></div></a> 
+            <a href= "https://snack.expo.dev/@felg4t/5-telas-da-netflix"> <div class="ftmenu5" style="height:1px; width:150px;"></div></a> 
+            <a href= "https://snack.expo.dev/@felg4t/5-telas-da-netflix"> <div class="ftmenu6" style="height:1px; width:150px;"></div></a> 
+
+        
+        </aside>
+        <main>
+            <div class="card">
+            <div class="quebrabottom"> <p class="p3">Projeto Netflix</p> </div> </div>
+            <a href="netflix.html"> <div class="atv1" style="height:90px; width:300px;"></div></a>
+        
+            <div class="card2">
+                <div class="quebrabottom"> <p class="p3">Passagem de Parâmetros</p> </div> </div>
+                <a href="parametros.html"> <div class="atv2" style="height:86px; width:120px;"></div></a>
+          
+                 <div class="card3">
+                  <div class="quebrabottom"> <p class="p3">Fluxo de Renderização</p> </div> </div>
+                  <a href="fluxo.html"> <div class="atv3" style="height:80px; width:120px;"></div></a>
+
+                  <div class="card4">
+                    <div class="quebrabottom"> <p class="p3">FlatList</p> </div> </div>
+                    <a href="flatlist.html"> <div class="atv4" style="height:86px; width:200px;"></div></a>
+                    
+
+                    <div class="card5">
+                        <div class="quebrabottom"> <p class="p3">Drawer Menu</p> </div> </div>
+                        <a href="drawer.html"> <div class="atv5" style="height:80px; width:120px;"></div></a>
+                        
+
+                        <div class="card6">
+                            <div class="quebrabottom"> <p class="p3">Planejamento TCC</p> </div> </div>
+                            <a href="ptcc.html"> <div class="atv6" style="height:130px; width:200px;"></div></a>
+                           
+
+                            <h1> "Eu não falhei. Apenas descobri 10 mil maneiras que não funcionam" - Thomas Edison</h1>
+                          
+
+                            
+        </main>
+
+        <p class="quebrabottom3"> -</p>
+        
+    </div>
+
+    <footer>
+        <p>@ Todos os direitos reservados</p>
+        </footer>
+      </body>
+      </html>
+      

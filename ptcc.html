@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script>
+        function fecharModal()
+            {
+            document.getElementById('fundo').style.display = 'none';
+            document.getElementById('modal').style.display = 'none';
+            }
+            
+        function abrirModal()
+            {
+            document.getElementById('fundo').style.display = 'block';
+            document.getElementById('modal').style.display = 'block';
+            }
+    </script>
+
+  <link rel="icon" type="imagem/png" href="porticon.png" />
+  <meta charset="utf-8">
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsivo*/
+@media screen and (max-width: 400px) {
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+}
+
+#fundo {
+        opacity: 0.8;
+        background-color: #000;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    
+    #modal {
+        width: 500px;
+        height: 850px;
+        left: 38%;
+        top: 13%;
+        margin: -75px 0 0 -75px;
+        position: fixed;
+        background-color: black;
+        background: transparent ;
+        z-index: 99;
+        display: none;
+        text-align: center;
+    }
+
+    img{
+		display:block;
+		margin:auto;
+		justify-content:center;
+		width:350px;
+		height:250px;
+    }
+
+
+body{background-image:url(tech.png);
+	  background-attachment:fixed;
+      background-repeat:no-repeat;
+	  background-size:1880px 900px;}
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(221, 221, 221, 0.007);
+}
+
+li {float: right; 
+}
+
+li a {
+    display:block; 
+    padding:12px;
+	text-decoration: none;
+
+}
+
+a:link {
+    color: blue;
+	
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+a:active {
+    color: steelblue;
+}
+footer {
+   position:fixed;
+   left:0;
+   bottom:0;
+   width:100%;
+   background-color:black;
+   color:white;
+   text-align: center;
+}
+
+.atv2{
+    background-image:url(netflix.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    top: 30%;
+    left: 45%;
+    object-fit: contain;
+    position: absolute;
+    
+}
+
+div {
+    margin: 0 auto;
+   /* border: 1px solid white; */
+align-items: center;
+width: 500px;
+justify-content: center;
+align-self: center;
+align-content: center;
+position: absolute;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 20px;
+    margin-top: 20px;
+	  height:20%;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: wrap;
+    position: absolute;
+    
+}
+
+.card2 {
+    
+    padding: 20px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 20%;
+    left: 35.5%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: wrap;
+    position: absolute;
+    
+}
+
+p{font-size: 50; color: white; font-family: Special Elite; text-align: center;}
+
+.p5{font-size: 50; color: white; font-family: Special Elite; text-align: center; background-color: #000;}
+
+.p4{font-size: 30px; color: red; font-family: Special Elite; text-align: center;}
+
+h1 {font-size: 20; color: white; font-family: Special Elite; text-align: center;}
+
+.p2 {font-size: 30px; color: rgb(30, 189, 9); font-family: Special Elite; text-align: center;}
+
+.p3 {font-size: 30px; color: white; font-family: Special Elite; text-align: center;}
+
+.quebrabottom{
+		margin: -33px 1px 100px -50px;
+	}
+
+  .quebrabottom2{
+		margin: -90px 1px 10px 220px;
+	}
+
+    .ftmenu1{
+    background-image:url(planningtcc.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    position:absolute;
+    object-fit: contain;
+    top: 15px;
+    left: 100px;
+    position: absolute;
+    
+}
+
+.card3 {
+    padding: 20px;
+    margin-top: 20px;
+	height:20%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size:large;
+    font-family:sans-serif;
+    color: white;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.ftapp{
+    background-image:url(ptcc.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    position:absolute;
+    object-fit: contain;
+    position: absolute;
+    
+}
+.ftapp2{
+    background-image:url(ptcc2.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    left: 60%;
+    position:absolute;
+    object-fit: contain;
+    position: absolute;
+    
+}
+
+.ftapp3{
+    background-image:url(ptcc3.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    left: 116%;
+    position:absolute;
+    object-fit: contain;
+    position: absolute;
+    
+}
+
+.ftapp4{
+    background-image:url(ptcc4.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    left: 172%;
+    position:absolute;
+    object-fit: contain;
+    position: absolute;
+    
+}
+
+.ftapp5{
+    background-image:url(ptcc5.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+	width:100%;
+    height: 70%;
+    padding:20px;
+    left: 228%;
+    position:absolute;
+    object-fit: contain;
+    position: absolute;
+    
+}
+
+</style>
+</head>
+<body>
+
+  <ul>
+
+    <li><a href="https://github.com/Felg4t">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/luiz-felipe-nogueira-da-silva-9376a2144/">Linkedin</a></li>
+    <li><a href="sobre.html">Portfólio</a></li>
+    <li><a href="portfolio.html">Portfólio</a></li>
+    <li><a href="index.html">Inicio</a></li>
+  </ul>
+  <title> Portfólio </title> 
+  <h1 class="quebrabottom"> Portfólio </h1>
+
+    
+  
+        <div class="card2">
+        <div class="quebrabottom"> 
+        <a href="#" class="abrir" onclick="abrirModal();"> <div class="ftmenu1" style="height:50px; width:300px;"></div> </a> </div> </div>
+        <div id="fundo"></div>
+        <div id="modal">
+        <p class="p4">Planejamento TCC</p>
+        <video width="240" height="600" controls>
+        <source src="ptcc.mp4" type="video/mp4">
+        </video>
+        <p class="p5"> Este projeto tem como objetivo apresentar o protótipo do Trabalho de Conclusão do curso de Desenvolvimento de Sistemas na Etec Profª Ilza Nascimento Pintus . O aplicativo será desenvolvido para uma ONG com o objetivo auxiliar no controle de todas atividades que ocorrem dentro do projeto. O projeto ainda está em fase inicial, mas já comecei criar um "protótipo" de algumas páginas, que sofrerão mudanças futuramente, mas já deixam ter uma ideia do que será apresentado. </p>
+        <p><a href="#" id="fechar" onclick="fecharModal();">Fechar</a></p> </div>
+
+
+
+
+
+
+
+
+
+      <div class="card3"> 
+        <div class="ftapp" style="height:500px; width:250px;"></div>
+        <div class="ftapp2" style="height:500px; width:250px;"></div>
+        <div class="ftapp3" style="height:500px; width:250px;"></div>
+        <div class="ftapp4" style="height:500px; width:250px;"></div>
+        <div class="ftapp5" style="height:500px; width:250px;"></div>
+    </div>
+
+      
+         </div>
+
+    <footer>
+        <p>@ Luiz Felipe Todos os direitos reservados.</p>
+        </footer>
+      </body>
+      </html>
+      
